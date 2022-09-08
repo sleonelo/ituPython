@@ -6,7 +6,7 @@
 contador=0
 desicion1="si"
 alumnos1=[]
-alumnos=[("lala",123,"matematica"),("lele",456,"matematica"),("lili",789,"matematica"),("lolo",101112,"matematica")]
+alumnos=["""("lala",123,"matematica"),("lele",456,"matematica"),("lili",789,"matematica"),("lolo",101112,"matematica")"""]
 tupla=()
 desicion2=int(1)
 
