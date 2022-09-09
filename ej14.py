@@ -4,10 +4,11 @@
  Indicar la cantidad de habitantes en un país en particular
  El porcentaje de habitantes en una ciudad de acuerdo al total registrado"""
 from calendar import c
-
+lista3=[]
 lista1=[]
 lista=[]
 ciudades={"Berlin":["Alemania", 100], "Mendoza":["Argentina", 10]}
+
 while True:
     
     desicion=int(input("\n\n 1) Agregar ciudades\n 2) Eliminar ciudades \n 3) Conocer cantidad de habitantes de una ciudad \n 4) Porcentaje de habitantes en relacion en relacion a todas las ciudades\n\n Elija una opción: "))
@@ -32,11 +33,20 @@ while True:
         print(f"La cantidad de habitantes de {habitante} es: {lista[1]}")
         
     if desicion==4:
+        ciudad=input("ingrese una ciudad para saber el porcentaje en relacion al conjunto de ciudades: ")
+        lista3=ciudades[ciudad]
+        num=lista3[1]
+        print(num)
+        
+        
         for i in ciudades.values():
             lista.append(i)
+        
         for i in range(len(lista)):
-            lista1.append(lista[i][1])
-    print(sum(lista1))
+                    lista1.append(lista[i][1])
+
+        porcentaje=(num*100)/sum(lista1)
+    print(f"El porcentaje de habitantes es {porcentaje:.2f}%")
   
         
     
