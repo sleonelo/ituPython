@@ -31,7 +31,8 @@ while True:
         habitante=input("ingrese ciudad para saber su cantidad de habitantes: ")
         lista=ciudades[habitante]
         print(f"La cantidad de habitantes de {habitante} es: {lista[1]}")
-        
+        continue
+    
     if desicion==4:
         ciudad=input("ingrese una ciudad para saber el porcentaje en relacion al conjunto de ciudades: ")
         lista3=ciudades[ciudad]
@@ -47,6 +48,6 @@ while True:
 
         porcentaje=(num*100)/sum(lista1)
     print(f"El porcentaje de habitantes es {porcentaje:.2f}%")
-  
+    continue
         
     
