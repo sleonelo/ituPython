@@ -2,6 +2,8 @@
 la ordene de forma ascendente y la muestre por pantalla ordenado. Python nos brinda la
 función “sorted” para realizar dicho procedimiento, pero la idea es que el ejercicio se
 resuelva utilizando algoritmia propia de algún método de ordenamiento existente."""
+
+lista=["alfa","bravo","charly","juliet","delta","eco","foxtrot","golf","hotel","india","loro", "jorge"]
             
 def ordenar_alfabeticamente(lista):
     alfabeto="abcdefghijklmnñopqrstuvwxyz"
@@ -15,5 +17,5 @@ def ordenar_alfabeticamente(lista):
         lista[indice]=palabra_actual
     print(lista)
 
-lista=["alfa","bravo","charly","juliet","delta","eco","foxtrot","golf","hotel","india","loro", "jorge"]
+
 ordenar_alfabeticamente(lista)

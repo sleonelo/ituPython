@@ -3,11 +3,11 @@ pares=[]
 numeros=[]
 num=int(input("ingrese un numero: "))
 numeros.append(num)
-desicion=str(input("desea seguir ingresando numeros? "))
+desicion=input("desea seguir ingresando numeros? ")
 while desicion=="s" or desicion=="si" or desicion=="SI" or desicion=="S":
     num=int(input("ingrese otro numero: "))
     numeros.append(num)
-    desicion=str(input("desea seguir ingresando numeros? "))
+    desicion=input("desea seguir ingresando numeros? ")
 
 for i in numeros:
     if i%2==0:
